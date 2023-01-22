@@ -73,4 +73,30 @@ def saver(output, save):
             new += '\n'
             counter = 0
     output_main = text_file.writelines(new)
-    retur
+    return
+
+# NOTE Transposition
+
+
+# Encryption
+
+# Matrix builder
+def enc_matrix(width, message):
+    r = 0
+    c = 0
+    # 2D matrix
+    matrix = [[]]
+
+    for position, character in enumerate(message):
+        # Adding each character
+        matrix[r].append(character)
+        # keeping track of character count
+        c += 1
+        # For case when index is out of range
+        if c >= width:
+            c = 0
+            r += 1
+        matrix.append([])
+
+    return matrix
+
