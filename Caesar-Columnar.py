@@ -268,3 +268,14 @@ if method == 2:
     save = input()
     main(method_2, message, key, save)
     print("Succesfully procceded")
+elif method == 1:
+    key = int(input("Provide an integer key:\n "))
+    if key >= 64:
+        print("Bit size out of range, max acceptable key lenght is 64!")
+        exit()
+    else:
+        print("Enter already created text file name to save", end='')
+        print(" or write a new text file name to be created: ")
+        save = input()
+        main_ceasar(method_2, key, mainly, save)
+        print("Succesfully procceded")
