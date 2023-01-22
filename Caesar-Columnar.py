@@ -52,3 +52,25 @@ def dec_ceasar(key, plain):
             output += alpha[position]
         output += " "
     return output
+
+# Save manipulated text to the file
+
+
+def saver(output, save):
+    # Please before opening give file name in your current working directory
+    # or change your directory to the file's directory
+    text_file = open(f'{save}.txt', "w")
+    new = ''
+    counter = 0
+    output = output.split()
+    for word in output:
+        counter += len(word)
+        new += word
+        new += " "
+        # Used counter in order to avoid saving the whole
+        # text to one line in the .txt file
+        if counter >= 99:
+            new += '\n'
+            counter = 0
+    output_main = text_file.writelines(new)
+    retur
