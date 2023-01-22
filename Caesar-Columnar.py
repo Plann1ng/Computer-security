@@ -199,3 +199,20 @@ def decrypt(message, key):
 
 
 # NOTE: Please make sure the saving file is in your current working directory
+# Simple save function
+def saver_trans(output, save):
+    # << Change your save path from here >>
+    text_file = open(f'{save}.txt', "w")
+    new = ""
+    counter = 0
+    for word in output:
+        counter += len(word)
+        new += word
+        new += " "
+    # Used counter in order to avoid saving the whole text
+    # to one line in the .txt file
+        if counter >= 99:
+            new += '\n'
+            counter = 0
+    output_main = text_file.writelines(new)
+    return output_main
