@@ -231,3 +231,19 @@ def main(method, message, key, save):
             dec = decrypt(word, key)
             free += [dec]
     saver_trans(free, save)
+
+# Decided to use main function again since it automates most of the work and
+# it is less likely to make typos
+
+
+def main_ceasar(method, key, plain, save):
+    # If user wants to Encrypt a message
+    if method == 1:
+        output = enc_ceasar(key, plain)
+        main_output = saver(output, save)
+        return main_output
+    # If user wants to decrypt a message
+    elif method == 2:
+        output = dec_ceasar(key, plain)
+        main_output = saver(output, save)
+        re
