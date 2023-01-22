@@ -118,3 +118,28 @@ def encrypt(message, key):
                 # the list and position stands for the index
                 ciphertext += matrix[row][position]
     return ciphertext
+
+# Deccryption
+
+
+# Key order
+def key_sequence(key):
+    sequence = []
+    # iterate over the position and characters
+    for position, character in enumerate(key):
+        # Getting previous position time letters
+        previousLetters = key[:position]
+        newNumber = 1
+        # iterating over the previous characters and
+        # indexes as the variable names show
+        for previousindex, prev_char in enumerate(previousLetters):
+            # if previous index was bigger than the current index taking
+            # previous index to the current index place and iterate again
+            if prev_char > character:
+                sequence[previousindex] += 1
+            # append ordered
+            else:
+                newNumber += 1
+        sequence.append(newNumber)
+    return sequence
+
