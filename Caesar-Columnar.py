@@ -260,3 +260,11 @@ print("\nEnter text file name only without adding the file type extension:\n ")
 path = input()
 mainly = os.getcwd() + f'\{path}.txt'
 message = reader(mainly)
+if method == 2:
+    print("Provide a string key with lenght bigger than 6 ", end='')
+    key = (input("for better encryption experience: \n"))
+    print("Enter already created text file name to save", end='')
+    print(" or write a new text file name to be created: ")
+    save = input()
+    main(method_2, message, key, save)
+    print("Succesfully procceded")
