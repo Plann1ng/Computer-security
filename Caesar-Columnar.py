@@ -30,3 +30,25 @@ def enc_ceasar(key, plain):
             output += alpha[cypherpos]
         output += " "
     return output
+
+# Decryption Caeser cipher
+# Did not managed to use "   '  " since it get's mixed with the string
+
+
+def dec_ceasar(key, plain):
+    # reading the file inside the function
+    text = reader(plain)
+    # Alphabet to take the shifted index and some other additional characters
+    alpha = 'abcdefghjiklmnopqrstuvwxyz,.:*-()" '
+    output = ''
+    for word in text:
+        for letter in word:
+            # Check the index of the current letter
+            letter = letter.lower()
+            index = alpha.find(letter)
+            # Reverse the method
+            position = (index - key) % 34
+            # Append to empty string
+            output += alpha[position]
+        output += " "
+    return output
