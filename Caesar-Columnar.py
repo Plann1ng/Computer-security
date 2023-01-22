@@ -246,4 +246,17 @@ def main_ceasar(method, key, plain, save):
     elif method == 2:
         output = dec_ceasar(key, plain)
         main_output = saver(output, save)
-        re
+        return main_output
+
+print("\nPlease transfer the file that needs to be ", end="")
+print("processed and save file to your main directory before processing!\n")
+print("\nPress [1] for substitution |\nPress [2] for transposition |\n")
+method = int(input())
+print("\nPress [1] for encryption |\nPress [2] for decyption |\n")
+method_2 = int(input())
+print("\nPlease make sure that the text file you want to modify is on", end='')
+print(" your current working directory before processing! \n")
+print("\nEnter text file name only without adding the file type extension:\n ")
+path = input()
+mainly = os.getcwd() + f'\{path}.txt'
+message = reader(mainly)
