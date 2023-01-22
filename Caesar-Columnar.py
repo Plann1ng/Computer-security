@@ -158,3 +158,30 @@ def empty(width, height, length):
             matrix[r].append('')
             totalAdded += 1
     return matrix
+
+# Setting out the matrix with proper lenght and width
+def dec_matrix(keywordSequence, message):
+    # Setting out the borders
+    width = len(keywordSequence)
+    height = len(message) / width
+    # Adding dummmy space
+    if height * width < len(message):
+        height += 1
+    matrix = empty(width, height, len(message))
+
+    position = 0
+    # Iteration
+    for num in range(len(keywordSequence)):
+        column = keywordSequence.index(num+1)
+
+        r = 0
+        # Adding while the lenght of the main list is bigger than the counter
+        # and lenght of the inner lists are enough
+        while (r < len(matrix)) and (len(matrix[r]) > column):
+            matrix[r][column] = message[position]
+            r += 1
+            position += 1
+
+    return matrix
+
+# Decryption main
