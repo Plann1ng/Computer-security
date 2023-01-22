@@ -216,3 +216,18 @@ def saver_trans(output, save):
             counter = 0
     output_main = text_file.writelines(new)
     return output_main
+
+# Main body
+
+
+def main(method, message, key, save):
+    free = []
+    if method == 1:
+        for word in message:
+            this = encrypt(word, key)
+            free += [this]
+    elif method == 2:
+        for word in message:
+            dec = decrypt(word, key)
+            free += [dec]
+    saver_trans(free, save)
