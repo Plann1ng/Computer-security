@@ -100,3 +100,21 @@ def enc_matrix(width, message):
 
     return matrix
 
+# Encryption main
+def encrypt(message, key):
+    # Building up the matrix
+    matrix = enc_matrix(len(key), message)
+    # getting ordered key
+    keywordSequence = key_sequence(key)
+
+    ciphertext = ""
+    # Getting position of the key
+    for num in range(len(keywordSequence)):
+        position = keywordSequence.index(num+1)
+        # Adding adding the letters back to the one word
+        for row in range(len(matrix)):
+            if len(matrix[row]) > position:
+                # Row stands for the list inside
+                # the list and position stands for the index
+                ciphertext += matrix[row][position]
+    return ciphertext
