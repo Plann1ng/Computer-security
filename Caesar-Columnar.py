@@ -185,3 +185,17 @@ def dec_matrix(keywordSequence, message):
     return matrix
 
 # Decryption main
+
+def decrypt(message, key):
+    # using matrix builder
+    matrix = dec_matrix(key_sequence(key), message)
+
+    plaintext = ""
+    # adding letter inside nested loop
+    for r in range(len(matrix)):
+        for c in range(len(matrix[r])):
+            plaintext += matrix[r][c]
+    return plaintext
+
+
+# NOTE: Please make sure the saving file is in your current working directory
