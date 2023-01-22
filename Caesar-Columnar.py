@@ -143,3 +143,18 @@ def key_sequence(key):
         sequence.append(newNumber)
     return sequence
 
+
+# Another matrix which takes lenght of key as row lenght and
+# len(message)/ len(key) for collumn
+def empty(width, height, length):
+    matrix = []
+    totalAdded = 0
+    # 2D matrix
+    for r in range(math.ceil(height)):
+        matrix.append([])
+        for c in range(width):
+            if totalAdded >= length:
+                return matrix
+            matrix[r].append('')
+            totalAdded += 1
+    return matrix
