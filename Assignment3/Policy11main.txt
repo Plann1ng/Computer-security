@@ -1,0 +1,114 @@
+11. Physical security
+	
+	Objective: To ensure implementation of appropriate access control to 
+	protect Loco News' physical amd technical assets and prevent unauthorized physical access, 
+	damage to equipment and inference to the Loco News' information and facilities processing.
+
+	Policy
+
+	1. Perimeters that contain information processing facilities' strenght should be dependant from the risk assesments and facilities 
+	should be secured from break-ins and entrances should be extra secured. For emergency exists within the facility phyical access control
+	methods should be considered. Facilities processing information should be seperated physically and for all facilities intruder detection
+	system should be implemented
+
+	2. Entry controls for secure areas should be considered to ensure that access is made only by authorized individuals. Entry controls should be aiming to 
+	record entry and departures of each visitor and not leaving visitors unattended. Records should be kept with audit trail. Adittionally all employees should be
+	carrying visible identification. Access rights for these individuals should be kept up to date.
+
+	3. Key facilities restricted from public access and to be prevented from being visible and audible from outside. Physical protection againts malicious attacks, 
+	natural disasters or accidents should be designed and applied for all areas. Secure areas should be known by individuals by need-to-know basis and recording 
+	equipment within these areas should be restricted and locked.
+
+	4. Equipments within the facility should be cited, secured and for these equipments correct functionality should be ensured. These containing sensitive information should be 
+	safeguarded with adittional attention. Malfunctions, power failures and other disruptions caused by failures which are limiting proper work flow should be avoided by checking power
+	and telecomunications cables for proper functionality and segregating these cables.
+
+	5. All equipment's proper functionality should be ensured by maintaining the equipment by following the supplier's reccomendations and processing the maintance only by
+	authorized personnel. If maintance scheduled to be done outside the facility special rules regarding protection of the sensitive information on the equipments should be on point.
+
+	6. Special rules should apply if off-site maintance should be done between the external organization and Loco News.
+	If sensitive infromation within the equipment was not appropriate to be cleared and identities managing the maintance should be documented.
+	Off-site work protection should also be ensured by not leaving the equipment unattended and keeping record of information traffic and identities of the individuals.
+
+	7. Sensitive data should be securely deleted from assets, and encryption with complex keys should be applied to prevent it from being recovered or destroyed. Media with 
+	sensitive or secret content should be deleted immediately from reproductive technologies such as printers, scanner and digital cameras.
+
+Implementations should be adapted to economic and technical circumstances of the work facility.
+
+12. Operations secuirity
+
+	Policy
+
+	Objective: To ensure that information, information processing facilities, softwares and hardwares are protected against malware and in case of malicious actions all necesarry information
+	for proper functionality of the organization is copied accurately together with the records of all events.
+	
+	1. Operating procedures should be accessible for all employees within Loco News and should be clearly covering everything about instalisation of systems and configuration processes.
+	Handling, error handling and backup process instructions should be clearly stated. Adittionally third-party and external support contacts in case of technical difficulties which can not be handled by the employees
+
+	2. All changes that are being made within the company should be controlled and restricted only to authorized personnel appropriately. These changes should be documented and appropriately tested before proposing changes.
+	Test environments should not have access to any development tools used in the workspace if not required. Users should use different accounts, and any confidential info should be kept away from the test environments when not required. 
+	Additional risk and hazard analysis should be considered following the security requirements and all employess should be informed regarding changes where appropriate. 
+	In case of system failure, the system should have ability to be returned to an earlier state.
+
+	3. Resource usage should be monitored and efficent working of all systems should be ensured. Assets with higher monetary cost should be safeguarded with adittional protection. Capacity managment should be considered.  
+	Optimisation of system logic and restricting hungry services should also be considered for better system performance. Proper capacity managment control should look like the following:
+
+			- Deleting unused(dark) data
+
+			- Application logic optimization
+
+			- Hih-consumption services should be avoided if not critical
+
+	4. To control the risk of information breaches, in process of development and testing segregation should be considered with clearly stated terms and conditions regarding software transfer from work to test environment.
+	All testing tools should be restricted from the operational system.
+
+	5. Should be ensured that information and information processing facilities are protected against malware by implementing controls to restrict usage of unauthorized softwares. Adittionally, terms that are clearly stating how to obtain information
+	from external networks securely should be on point. Regular checks of critical for the organization softwares should be made and in case of breac data continuity plan should be available.
+
+	6. Controls such as black and whitelisting should be considered for detection and\or prevention usage of unauthorized software. For all softwares malware detection tools from authorized service providers should be considered to ensure proper security levels
+	within the working environment. All anti-malware tool shoould be regularly checked and kept up to date. Adittional control measures should be considered for information collection from the network. . In case of vulnerability identification, the organization
+	should define responsibilities and perform a hazard analysis. If patch is available from a legitimate source risk analysis should be made, otherwise patches should be remade, or other temporary controls should be applied. Systems at high risk should be prioritized and addressed first.
+
+	7. Copies of all critical data that was backed up should be checked and kept up to date in regular basis and kept away from site. Aditionally audit logs shoul be used and all clocks should be synchronized to provide accurate time for all recordings.
+
+13. Communications security
+	
+	Policy
+	
+	Objective: Information exchange controls within network should be designed to ensure confidentiality, integrity and availability of the stored information.
+
+	1. Control measures should be on point to ensure prevention of unauthorised network, access to the network, wireless network and connected system applications.
+	Should be aditionally practiced to monitor the network to secure it from flaws.
+
+	2. All connnection to the network that are being made by the system should be restricted and only connection to authorised networks should be allowed for the individuals within the facility.
+	
+	3. Responsibilities for networks and computer operations should be separated.
+
+	4. Features for security should be considered, these features should be as following:
+
+	- Encryption
+
+	- Authentication
+
+	- Connection controls
+
+	- Restriction of access to the network services or applications
+
+	5. For large networks segregation should be considered with dividing it into separate network domains. Chosen domains should be filtered and based regarding their trust levels. Acess between
+	these networks should be done using gateways. 
+
+	6. Terms and controls regarding protection of transferred and information should be implemented by the organizations. These terms should be covering the compromisation of the organizational
+	sensitive information and attachments. Aditionally terms regarding proper usage of email should be implemented as well by the organization.
+	Cryptographic encryptions should be used to protect all organizational sensitive information. Transfer of confidential information over insecure network should be restricted.
+	With agreements should be ensured that transfers are traceable and non-repudiational. 
+
+	7. Confidentiality of the electronic messages should be ensured and their transfer to the correct adress should be verify. Aditionally should be considered implementation of watermarks or signatures to ensure integrity.
+	Organization should have terms for the information when the agreement period is over and additionally in case of agreement breaches.
+	
+
+
+
+	
+	
+	
+	
